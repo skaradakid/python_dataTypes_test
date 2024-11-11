@@ -6,7 +6,8 @@ def add_to_list(numbers):
     Return:
     - The modified list.
     """
-    pass
+    numbers.append(6)
+    return numbers
 
 
 def remove_from_list(numbers):
@@ -17,7 +18,11 @@ def remove_from_list(numbers):
     Return:
     - The modified list.
     """
-    pass
+    for x in numbers:
+        if x == 3:
+            numbers.remove(x)
+    return numbers
+print(remove_from_list([1,2,4,3,5,3,6,7]))
 
 
 def insert_at_beginning(numbers):
