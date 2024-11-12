@@ -29,7 +29,7 @@ def combine_operations():
     Return:
     - The combined result (float).
     """
-    return print(int_division() + float_multiplication())
+    return int_division() + float_multiplication() - 3
 
 
 def extract_word():
@@ -56,10 +56,9 @@ def to_lowercase():
     Return:
     - The lowercase version of the string.
     """
-    x = 'Python is awesome!'
-    y = x.lower()
-    print(y)
-
+    string = 'Python is awesome!'
+    lower_string = string.lower()
+    return lower_string
 
 
 def count_o():
